@@ -12,7 +12,7 @@ export const QuestionContainer = styled.div`
 export const Question = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #ffffff;
+  color: #000000;
 `;
 
 export const OptionsContainer = styled.div`
@@ -31,7 +31,7 @@ export const Option = styled.button`
   border-radius: 10px;
   padding: 1rem;
   font-size: 1rem;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
   transition: all 0.3s ease;
 

@@ -1,13 +1,14 @@
 import styled, {keyframes} from "styled-components";
-
+import puzzlebg from "../../assets/puzzlebg.jpg";
 export const QuizGameContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #ffffff;
+    background-image: url(${puzzlebg});
+    background-size: cover;
+    color: #00008B;
     min-height: 100vh;
     display: flex;
     justify-content: center;
