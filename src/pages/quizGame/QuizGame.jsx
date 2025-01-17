@@ -3,7 +3,7 @@ import { QuizGameContainer, QuizContainer, Title } from './styleComponents';
 import QuizQn from '../../components/QuizQn/QuizQn';
 import QuizResult from '../../components/QuizResult/QuizResult';
 import { quizData } from '../../data/data'
-import RecentResults from '../../components/RecentResults/RecentResults';
+
 export default function QuizGame() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
@@ -34,7 +34,7 @@ export default function QuizGame() {
             <QuizContainer>
                 <Title>Quiz Game</Title>
                 {showResult ? (
-                    <QuizResult score={score} totalQuestions={quizData.length} onRestart={restartQuiz} />
+                    <QuizResult score={score} totalQuestions={quizData.length} onRestart={restartQuiz} recentResults={recentResults} />
                 ) : (
                     <QuizQn
                         question={quizData[currentQuestion].question}
@@ -45,7 +45,7 @@ export default function QuizGame() {
                     />
                 )}
             </QuizContainer>
-            <RecentResults results={recentResults} />
+
         </QuizGameContainer>
     )
 }
