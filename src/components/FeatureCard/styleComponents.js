@@ -9,7 +9,6 @@ padding: 1rem;
 border: 2px solid #000;
 border-radius: 10px;
 background-origin: border-box;
-background-clip: padding-box, border-box;
 background: rgba(255, 255, 255, 0.1);
 backdrop-filter: blur(10px);
   

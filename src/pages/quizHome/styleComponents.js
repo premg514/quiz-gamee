@@ -37,7 +37,7 @@ export const QuizHomeBorder = styled.div`
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   height: 85vh;
-  width: 80vw;
+  width: 85vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +102,7 @@ export const QuizPara = styled.p`
 `;
 
 export const QuizHeading = styled.h1`
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
@@ -189,10 +189,10 @@ export const QuizButton = styled.button`
 export const FeatureCardsContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
+
   width: 100%;
   color: #ffffff;
-  margin-top: 40px;
+  margin-top: 10px;
   gap: 20px;
 
   @media (max-width: 768px) {
@@ -201,34 +201,5 @@ export const FeatureCardsContainer = styled.div`
   }
 `;
 
-export const FeatureCard = styled.div`
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: all 0.3s ease;
-  flex: 1;
-  min-width: 200px;
 
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-  }
-
-  p {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
-  }
-`;
 
